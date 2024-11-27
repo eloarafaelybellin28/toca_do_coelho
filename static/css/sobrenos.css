@@ -1,0 +1,118 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', sans-serif;
+}
+
+body {
+    background-color: #f5f1e1; /* Cor de fundo bege suave */
+    color: #4a4a4a; /* Texto em um tom escuro e legível */
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #6b4226; /* Cor de marrom suave para destacar subtítulos */
+    margin-bottom: 15px;
+}
+
+/* Parágrafos */
+p {
+    font-size: 18px;
+    color: #6b4226;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Imagens */
+.imagens {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.imagens img {
+    width: 400px;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para a seção de Sobre nós */
+.sobre-nos {
+    background-color: #cab16d; /* Fundo bege claro */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos h1 {
+    margin-bottom: 30px;
+    color: #4a4a4a;
+}
+
+.sobre-nos p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #6b4226;
+}
+
+.sobre-nos .imagem-equipe,
+.sobre-nos .imagem-local {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens img {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .sobre-nos h1 {
+        font-size: 28px;
+    }
+
+    .sobre-nos p {
+        font-size: 16px;
+    }
+}
+
+

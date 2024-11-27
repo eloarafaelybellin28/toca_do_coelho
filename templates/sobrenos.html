@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Cafeteria Toca do Coelho</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/sobrenos.css')}}">
+</head>
+<body>
+    <!-- Seção de Sobre Nós -->
+    <section class="sobre-nos">
+        <div class="container">
+            <h1>Sobre a Cafeteria Toca do Coelho</h1>
+            <p>A Toca do Coelho é um lugar acolhedor e charmoso, onde você pode degustar cafés especiais enquanto se sente em casa. Nossa história começou com uma paixão por cafés artesanais e a vontade de oferecer um espaço único para nossos clientes.</p>
+
+            <div class="imagens">
+                <div class="imagem-equipe">
+                    <h2>Nossa Equipe</h2>
+                     <img src="{{ url_for('static', filename='img/equipe.jpg') }}" alt="equipe" />
+                </div>
+                <div class="imagem-local">
+                    <h2>Nosso Espaço</h2>
+                     <img src="{{ url_for('static', filename='img/lugar.jpg') }}" alt="lugar" />
+                </div>
+            </div>
+
+            <p>Venha nos visitar e viver a experiência da Toca do Coelho. Estamos esperando por você!</p>
+        </div>
+    </section>
+</body>
+</html>
+

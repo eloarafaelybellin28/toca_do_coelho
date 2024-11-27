@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf9f2; /* Cor de fundo bege ainda mais claro */
+    font-family: 'Georgia', serif; /* Fonte com estilo literário */
+    color: #4b3f28; /* Texto marrom */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #d8c3a5; /* Marrom claro no fundo de toda a área do cabeçalho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #6b8e23; /* Verde oliva */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #4b3f28;
+    margin-top: 10px;
+}
+
+/* Seção de Postagens */
+.postagens {
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6b8e23; /* Verde oliva */
+}
+
+/* Postagem individual */
+.post {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 5px solid #4b3f28; /* Borda marrom */
+    margin-right: 20px;
+}
+
+.post-info {
+    max-width: 800px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #6b8e23; /* Verde oliva */
+    margin-bottom: 10px;
+}
+
+.data {
+    font-size: 1rem;
+    color: #6b8e23;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.ler-mais {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #6b8e23;
+    font-weight: bold;
+    border: 2px solid #6b8e23;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ler-mais:hover {
+    background-color: #6b8e23;
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #dcdcdc;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #4b3f28;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .post {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+
+    .post-info {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .descricao {
+        font-size: 1rem;
+    }
+
+    .ler-mais {
+        font-size: 1rem;
+    }
+}

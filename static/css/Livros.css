@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5dc; /* Cor de fundo bege */
+    font-family: 'Georgia', serif; /* Fonte de estilo livro */
+    color: #4b3f28; /* Texto marrom */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #6b8e23; /* Título verde oliva */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6b8e23; /* Título verde oliva */
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.filtros {
+    background-color: #d2b48c; /* Fundo marrom claro */
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.filtros h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.filtros-opcoes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.filtros-opcoes label {
+    font-weight: bold;
+}
+
+.filtros-opcoes select, .filtros-opcoes input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filtros-opcoes button {
+    background-color: #6b8e23; /* Cor marrom para os botões */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.filtros-opcoes button:hover {
+    background-color: #556b2f;
+}
+
+.livros {
+    margin-top: 30px;
+}
+
+.livro {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.livro img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.livro-infos {
+    padding-left: 20px;
+    max-width: 600px;
+}
+
+.livro h3 {
+    font-size: 1.8rem;
+    color: #6b8e23; /* Título dos livros em verde oliva */
+}
+
+.livro .autor {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #6b8e23;
+}
+
+.livro .genero {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.livro .descricao {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.livro .preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4b3f28;
+}

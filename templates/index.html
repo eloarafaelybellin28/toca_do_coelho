@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toca do Coelho Cafeteria e Livraria</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/paginainicial.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/rodape.css')}}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo2.png') }}" alt="Logotipo Toca do Coelho">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/sobrenos">Sobre Nós</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/Livros">Livros</a></li>
+                <li><a href="/Blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome-message">
+        <h1>Bem Vindo à Toca do Coelho</h1>
+        <h2>Cafeteria e Livraria</h2>
+        <p class="description">Um espaço acolhedor para amantes de café e livros, onde cada visita é uma nova descoberta.</p>
+    </div>
+
+    <section class="hero">
+        <div>
+            <video autoplay muted loop class="background-video">
+                <source src="{{ url_for('static', filename='video/cafe.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Seção da Introdução -->
+    <section class="introduction">
+        <h2><strong>Uma jornada de paixão e criatividade!</strong></h2>
+        <p>Tudo começou quando 3 jovens Tainá, Wesley e Willian, receberam uma tarefa. Eles se juntaram para criar uma empresa, que seguiria com eles até o final do curso técnico de administração. Juntando a paixão dos 3 por cafés, chás e livros, nasceu a Toca do Coelho, um lugar projetado para ser um ambiente acolhedor, inclusivo e divertido que busca reacender a paixão por livros no Brasil. Conforme a empresa foi tomando forma, novas pessoas se juntaram à nossa família, nossos amigos Pedro e Bruno.</p>
+
+        <div class="image-gallery">
+            <img src="{{ url_for('static', filename='img/doce.jpg') }}" alt="doce" class="img-destaque">
+            <img src="{{ url_for('static', filename='img/salgado.jpg') }}" alt="salgado" class="img-salgado">
+            <img src="{{ url_for('static', filename='img/cafe.jpg') }}" alt="cafe" class="img-cafe">
+        </div>
+    </section>
+     <!-- Seção Nossa Cafeteria -->
+
+
+     <section class="nossa-cafeteria">
+        <div>
+            <h2>Nossa Cafeteria</h2>
+        </div>
+        <div class="nossa-cafeteria-div">
+            <img src="{{ url_for('static', filename='img/cafeteria.jpg') }}" alt="cafeteria" class="img-cafeteria"/>
+            <img src="{{ url_for('static', filename='img/padaria.jpg') }}" alt="padaria" class="img-cafeteria"/>
+            <img src="{{ url_for('static', filename='img/bolo.jpg') }}" alt="bolo" class="img-cafeteria" />
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Acesse</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/tocadocoelho.cafe/profilecard/?igsh=bTB6eGo4aXdsMDM1" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me/5519981613672" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Nossa Localização</h3>
+                <p> Rua: Jorge Cury 180, Centro-Piracicaba</p>
+                <p>Horário de Funcionamento: Seg - Sex: 08h - 18h | Sáb: 09h - 17h</p>
+            </div>
+        </div>
+        <div class="thank-you-message">
+            <p><strong>Agradecemos pela sua visita! Esperamos vê-lo novamente em breve.</strong></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cardápio da Cafeteria Toca do Coelho: Chás, bolos, doces, salgados e cafés deliciosos com preços acessíveis.">
+    <title>Menu - Cafeteria Toca do Coelho</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/menu.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Menu</h1>
+            <p>Deliciosas opções para acompanhar seu café!</p>
+        </div>
+    </header>
+
+    <section class="cardapio">
+        <div class="container">
+            <!-- Seção de Chás -->
+            <h2>Chás</h2>
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/camomila.jpg') }}" alt=" camomila">
+                <div class="descricao">
+                    <h3>Chá de Camomila</h3>
+                    <p>Um chá suave e relaxante, perfeito para acompanhar seu momento de descanso.</p>
+                    <p class="preco">R$ 8,00</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/verde.jpg') }}" alt=" verde">
+                <div class="descricao">
+                    <h3>Chá Verde</h3>
+                    <p>Refrescante e antioxidante, ideal para quem busca uma opção saudável.</p>
+                    <p class="preco">R$ 10,00</p>
+                </div>
+            </div>
+
+            <!-- Seção de Cafés -->
+            <h2>Cafés</h2>
+            <div class="item">
+                 <img src="{{ url_for('static', filename='img/expresso.jpg') }}" alt=" expresso">
+                <div class="descricao">
+                    <h3>Café Expresso</h3>
+                    <p>Um café forte e encorpado, ideal para quem busca o sabor autêntico do café.</p>
+                    <p class="preco">R$ 6,00</p>
+                </div>
+            </div>
+
+            <div class="item">
+                 <img src="{{ url_for('static', filename='img/latte.jpg') }}" alt=" latte">
+                <div class="descricao">
+                    <h3>Café Latte</h3>
+                    <p>Uma combinação suave de café expresso e leite vaporizado, perfeito para qualquer momento.</p>
+                    <p class="preco">R$ 12,00</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/capuchino.jpg') }}" alt=" capuchino">
+                <div class="descricao">
+                    <h3>Café Cappuccino</h3>
+                    <p>Café expresso, leite vaporizado e uma camada cremosa de espuma, uma combinação clássica e deliciosa.</p>
+                    <p class="preco">R$ 12,00</p>
+                </div>
+            </div>
+
+            <!-- Seção de Bolos -->
+            <h2>Bolos</h2>
+            <div class="item">
+                <img src="{{ url_for('static', filename='img/chocolate.jpg') }}" alt=" chocolate">
+                <div class="descricao">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Bolo fofinho, coberto com ganache de chocolate. Uma tentação irresistível!</p>
+                    <p class="preco">R$ 12,00</p>
+                </div>
+            </div>
+            <div class="item">
+                 <img src="{{ url_for('static', filename='img/cenoura.jpg') }}" alt=" cenoura">
+                <div class="descricao">
+                    <h3>Bolo de Cenoura</h3>
+                    <p>Bolo caseiro, com cobertura de chocolate e muito sabor!</p>
+                    <p class="preco">R$ 10,00</p>
+                </div>
+            </div>
+
+            <!-- Seção de Doces -->
+            <h2>Doces</h2>
+            <div class="item">
+               <img src="{{ url_for('static', filename='img/brigadeiro.jpg') }}" alt="brigadeiro">
+                <div class="descricao">
+                    <h3>Brigadeiro</h3>
+                    <p>Doce tradicional brasileiro, feito com leite condensado e chocolate. Uma explosão de sabor!</p>
+                    <p class="preco">R$ 5,00</p>
+                </div>
+            </div>
+            <div class="item">
+               <img src="{{ url_for('static', filename='img/Beijinho.jpg') }}" alt="Beijinho">
+                <div class="descricao">
+                    <h3>Beijinho</h3>
+                    <p>Doce de coco, coberto com açúcar cristal. Perfeito para quem ama um sabor tropical!</p>
+                    <p class="preco">R$ 5,00</p>
+                </div>
+            </div>
+
+            <!-- Seção de Salgados -->
+            <h2>Salgados</h2>
+            <div class="item">
+                 <img src="{{ url_for('static', filename='img/empada.jpg') }}" alt=" empada ">
+                <div class="descricao">
+                    <h3>Empada de Frango</h3>
+                    <p>Empada deliciosa, recheada com frango desfiado e temperos especiais.</p>
+                    <p class="preco">R$ 8,50</p>
+                </div>
+            </div>
+
+            <div class="item">
+                 <img src="{{ url_for('static', filename='img/coxinha.jpg') }}" alt=" coxinha">
+                <div class="descricao">
+                    <h3>Coxinha</h3>
+                    <p>Clássico dos salgados brasileiros, recheado com frango e empanado crocante.</p>
+                    <p class="preco">R$ 7,00</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

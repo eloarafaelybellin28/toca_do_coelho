@@ -1,0 +1,151 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Usando Georgia para o texto principal */
+}
+
+body {
+    background-color: #f5f1e1; /* Cor de fundo bege suave */
+    color: #4a4a4a; /* Texto em um tom escuro e legível */
+    line-height: 1.6;
+    font-size: 16px;
+    font-style: normal; /* Removendo o itálico */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f2e2c4; /* Cor suave para o cabeçalho */
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras sutis para destacar */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif; /* Usando Playfair Display para o título */
+    font-size: 36px;
+    color: #6b4226; /* Marrom suave */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+}
+
+p {
+    font-size: 18px;
+    color: #6b4226;
+}
+
+/* Cardápio */
+.cardapio {
+    margin-top: 40px;
+}
+
+.cardapio h2 {
+    font-family: 'Playfair Display', serif; /* Usando Playfair Display para subtítulos */
+    font-size: 28px;
+    color: #6b4226;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: 4px solid #808000; /* Borda verde oliva para as imagens */
+    transition: transform 0.3s ease-in-out; /* Adicionando uma transição suave para o efeito hover */
+}
+
+.item img:hover {
+    transform: scale(1.05); /* Efeito de zoom suave quando a imagem é sobrevoada */
+}
+
+.descricao {
+    flex: 1;
+}
+
+.descricao h3 {
+    font-family: 'Playfair Display', serif; /* Playfair Display para subtítulos de itens */
+    font-size: 24px;
+    color: #6b4226;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.descricao h3:hover {
+    color: #e07b00; /* Mudando a cor do título ao passar o mouse */
+}
+
+.descricao p {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 20px;
+    color: #e07b00; /* Cor de destaque para preços */
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #f2e2c4; /* Fundo suave para o rodapé */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombras para o rodapé */
+}
+
+footer p {
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item img {
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .descricao h3 {
+        font-size: 20px;
+    }
+
+    .descricao p, .preco {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    header {
+        padding: 20px 0; /* Ajuste de padding para o cabeçalho em telas menores */
+    }
+}

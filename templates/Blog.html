@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog do Clube do Livro - Dicas de leitura, resenhas e novidades literárias.">
+    <title>Blog do Clube do Livro</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Blog.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Blog do Clube do Livro</h1>
+            <p>Descubra novas leituras, resenhas e tudo sobre o mundo literário!</p>
+        </div>
+    </header>
+
+    <!-- Seção de Postagens Recentes -->
+    <section class="postagens">
+        <div class="container">
+            <h2>Postagens Recentes</h2>
+
+            <!-- Postagem 1 -->
+            <div class="post">
+                <img src="{{ url_for('static', filename='img/harry.jpg') }}" alt="harry" />
+                <div class="post-info">
+                    <h3>Harry Potter e a Pedra Filosofal</h3>
+                    <p class="data">Publicado em 20 de Outubro de 2024</p>
+                    <p class="descricao">Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione Granger.</p>
+                    <a href="#" class="ler-mais">Leia Mais</a>
+                </div>
+            </div>
+
+            <!-- Postagem 2 -->
+            <div class="post">
+                <img src="{{ url_for('static', filename='img/amor.jpg') }}" alt="amor" />
+                <div class="post-info">
+                    <h3>Amor e Gelato</h3>
+                    <p class="data">Publicado em 10 de Outubro de 2024</p>
+                    <p class="descricao">"Amor e Gelato" é uma história cativante sobre Lina, uma adolescente que vai para a Itália após a morte de sua mãe. Ela descobre o diário de sua mãe, escrito durante o tempo em que viveu na Itália, e decide seguir as pistas para desvendar o passado da família. Nessa jornada, Lina conhece Ren, um italiano encantador, e juntos embarcam em uma aventura pela Toscana, descobrindo segredos, enfrentando dilemas pessoais e se apaixonando ao longo do caminho.</p>
+                    <a href="#" class="ler-mais">Leia Mais</a>
+                </div>
+            </div>
+
+            <!-- Postagem 3 -->
+            <div class="post">
+                <img src="{{ url_for('static', filename='img/historia.jpg') }}" alt="historia" />
+                <div class="post-info">
+                    <h3>História do Café </h3>
+                    <p class="data">Publicado em 5 de Outubro de 2024</p>
+                    <p class="descricao">Este delicioso livro narra a trajetória de aventura e ousadia da mais saborosa e conhecida bebida negra em todo o mundo: o café. Desde sua descoberta, a Coffea arabica traçou novas rotas comerciais, criou espaços de sociabilidades até então inexistentes, estimulou movimentos revolucionários, inspirou a literatura e a música, desafiou monopólios consagrados e tornou-se o elixir do mundo moderno, consolidando as cafeterias como referência de convívio, debate e lazer. </p>
+                    <a href="#" class="ler-mais">Leia Mais</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
